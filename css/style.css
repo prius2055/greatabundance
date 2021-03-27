@@ -1,0 +1,585 @@
+/*===================================================
+                DEFAULT VALUES:
+                font family             :Roboto condensed
+
+                Greenish blue           :#6F1E51;        (Buttons, icons, links, lines & background)
+                steel grey              :#41464b        (Headings)
+                Blue Bayoux             :#64707b        (paragraphs)
+                White                   :#fff           (text with black background)
+                black                   :#000
+===================================================*/
+
+/*===================================================
+                GENERIC
+===================================================*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "roboto condensed", sans-serif;
+    position: relative;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #41464b;
+}
+
+h4 {
+    color:#64707b;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+p {
+    color: #64707b;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.bg-parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-title-underline {
+    background-color: #6F1E51;;
+    height: 3px;
+    width: 40px;
+    margin: 0 auto 20px auto;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 0 !important;
+}
+
+
+/*===================================================
+                BUTTONS
+===================================================*/
+
+.btn-general {
+    padding: 12px 26px 12px 26px;
+    border-width: 2px;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    border-color: #fff;
+    color: #41464b;
+    background-color: #fff;
+}
+
+.btn-blue {
+    border-color: #6F1E51;
+    color: #6F1E51;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    border-color: #fff;
+    color: #fff;
+    background-color:#6F1E51;
+}
+
+
+/*===================================================
+                STYLING ANIMATIONS
+===================================================*/
+#home-cover,#home-heading,#home-btn {
+    animation-duration: .5s;   
+}
+
+#home-cover{
+    animation-delay: 0.1s;  
+}
+#home-heading {
+    animation-delay: 0.5s;  
+}
+#home-btn {
+    animation-delay: 1s;   
+}
+
+
+
+/*===================================================
+                HOME
+===================================================*/
+#home {
+    height: 100%;
+}
+
+
+#home-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), #000),url(img/home-cover/home-cover_1.jpg);
+    height: 100%;
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#home-heading h3 {
+    color: #fff;
+    margin: 20px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+#home-heading h2 {
+    color: #fff;
+    margin: 20px 0 20px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/*===================================================
+                MISSION
+===================================================*/
+#about-bg-diagonal {
+    background-image: url(img/mission-cover/bg-image.jpg);
+    height: 500px;
+    width: 50%;
+    float: right;
+    border-left: 200px solid #fff;
+    border-top: 700px solid transparent;
+    margin: 100px 100px 0 0;
+}
+
+#about-content-box {
+    float: left;
+    height: 700px;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+
+#about .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+
+/*===================================================
+                WORK
+===================================================*/
+
+#work{
+    clear: both;
+}
+.img-wrapper {
+    overflow: hidden;
+    width: auto;
+
+}
+
+.img-wrapper img {
+    height:350px;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/*===================================================
+                STATS
+===================================================*/
+
+.stats-box {
+    padding: 100px 0;
+}
+
+.stats-box i {
+    color: #6F1E51;
+}
+
+.stats-box h2 {
+    color: #6F1E51;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0 1px 0;
+}
+
+.stats-box p {
+    color: #6F1E51;
+    font-weight: 300;
+    margin-top: 0;
+    text-transform: uppercase;
+
+}
+
+/*===================================================
+                TEAM
+===================================================*/
+
+.team-member {
+    margin: 0 15px;
+}
+
+.team-member-info {
+    padding: 0 10px 30px 0;
+}
+
+.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 5px;
+    letter-spacing: 1px;
+}
+
+.team-member-designation {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 2px;
+    letter-spacing: 1px;
+    color: #6F1E51;
+    font-style: italic;
+}
+
+/*===================================================
+                SOCIAL ICONS
+===================================================*/
+.social-list li {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 6px 10px 0 0;
+    list-style: none;
+}
+
+.social-icon i {
+    font-size: 17px;
+    color: #64707b;
+}
+
+.icon-white {
+    color: #fff;
+
+}
+
+.icon-white:hover {
+    color: #6F1E51;;
+}
+
+.social-icon i:hover {
+    color: #6F1E51;
+}
+
+/*===================================================
+                TESTIMONIALS
+===================================================*/
+#testimonial-background {
+    background-image: url(img/bg-testimonial.jpg);
+}
+
+#testimonial .content-box {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+#testimonials {
+    padding: 20px 0;
+}
+
+.customer-testimonial img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+}
+
+.content-title-white h3 {
+    color: #fff;
+}
+
+.customer-testimonial blockquote {
+    color: #fff;
+    font-style: italic;
+    font-family: Georgia, sans-serif;
+    border: 0;
+    padding: 6px 150px;
+    position: relative;
+    /* This is done when a child element is to be set at a particular position to the parent element. In this case the quotation marks(before and after elements) are the child elements while the parent element is the blockquote.The position of the parent element is "relative", while that of the child element is "absolute" then set the top,bottom,right and left of the child element respectively. */
+}
+
+.customer-testimonial blockquote::before {
+    content: '\201C';
+    top: 0;
+    left: 100px;
+}
+
+.customer-testimonial blockquote::after {
+    content: '\201D';
+    bottom: 0;
+    right: 100px;
+}
+
+.customer-testimonial blockquote::before,
+.customer-testimonial blockquote::after {
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.customer-testimonial blockquote p {
+    color: #fff;
+}
+
+.testimonial-author p strong {
+    color: #fff;
+    display: block;
+}
+
+.testimonial-author p {
+    color: #fff;
+}
+
+
+/*===================================================
+                PRICING
+===================================================*/
+.pricing-box {
+    border: 3px solid #6F1E51;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+.pricing-box p {
+    color:#41464b;
+    text-transform: capitalize;
+    text-align: justify;
+    padding: 0 30px;
+}
+
+/*===================================================
+                CLIENTS
+===================================================*/
+.client {
+    padding: 40px 0;
+}
+
+/*===================================================
+                CONTACT
+===================================================*/
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact-left h3,
+.contact-right h3 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.contact-left p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.79), #41464b), url(img/contact-info-image/contact-info-img.png);
+    background-size: contain;
+    border: none;
+}
+
+address {
+    color: #fff;
+}
+
+.social-list {
+    padding-left: 0;
+}
+
+.form-control {
+    border-radius: 0;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #fff;
+    background: transparent;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.form-control:hover,
+.form-control:active,
+.form-control:focus {
+    background: transparent;
+    color: #fff;
+}
+
+/*===================================================
+                FOOTER BOTTOM
+===================================================*/
+#footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+#footer-copyright p {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu {
+    float: left;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+    color: #fff;
+}
+
+#footer-menu a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu a:hover {
+    color: #6F1E51;;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    font-size: 22px;
+    border-radius: 0;
+    display: none;
+    padding: 3px 15px;
+}
+
+/*===================================================
+                NAVIGATION
+===================================================*/
+.navbar {
+    padding: 20px 0;
+}
+
+.stoika-topnav {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    padding: 15px 0;
+}
+
+#stoika-navbar ul li a {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff !important;
+}
+
+#stoika-navbar ul li a.active{
+    color: #6F1E51; !important;
+    
+}
+
+#stoika-navbar ul li a:hover {
+    color: #6F1E51;
+}
+
+.nav-img {
+    width: 10%;
+}
+
+button.navbar-toggler {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff !important;
+    border-radius: 0;
+}
+
+button.navbar-toggler:hover,
+button.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.stoika-topnav,
+.navbar-dark,
+.bg-dark {
+    transition: all 1s ease-in-out;
+    transition: all 1s ease-in;
+}
+
+.stoika-topnav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+
+}
+
+.navbar-collapse.show{
+    margin-top: 10px;
+    border-top: 2px solid transparent;
+    box-shadow: inset 1px 1px 0 rgba(255,255,255,.1);
+    
+    
+    
+}

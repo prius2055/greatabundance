@@ -1,0 +1,506 @@
+/*===================================================
+                BOOTSTRAP MEDIA QUERY
+===================================================*/
+
+/*
+xs <320px
+xs <480px
+xs <576px	
+sm ≥576px	
+md ≥768px	
+lg ≥992px	
+xl ≥1200px	
+xxl ≥1400px
+*/
+
+/*---XXL SCREEN SIZES---*/
+
+@media(min-width:1400px) {
+    /*--OK--*/
+}
+
+/*---XL SCREEN SIZES---*/
+
+@media(min-width:1200px) and (max-width:1399px) {
+    /*--OK--*/
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+
+    /*--NAVIGATION--*/
+
+    .navbar {
+        padding: 5px 0;
+    }
+
+    .stoika-topnav {
+        padding: 5px 0;
+    }
+
+    #stoika-navbar ul li {
+        padding-left: 0;
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    #stoika-navbar ul li a {
+        padding: 5px 8px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    /*--FOOTER BOTTOM--*/
+
+    #footer-bottom {
+        padding: 10px 0;
+        margin-top: 30px;
+    }
+
+    #footer-menu {
+        float: left;
+    }
+
+    #footer-menu a {
+        margin: 0 5px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .btn-back-to-top {
+        right: 10px;
+        bottom: 5px;
+        font-size: 16px;
+        padding: 3px 10px;
+    }
+}
+
+
+
+@media(min-width:768px) and (max-width:991px) {
+
+    /*--NAVIGATION--*/
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 5px 0;
+        ;
+    }
+
+    .navbar-nav {
+        float: left;
+    }
+
+    /*---------HOME--------*/
+    #home-heading h3 {
+        font-size: 45px;
+    }
+
+    /*---------SERVICES--------*/
+    .container-title {
+        margin-top: 0;
+    }
+
+    /*---------TESTIMONIALS--------*/
+
+    .customer-testimonial img {
+        max-width: 120px;
+        max-height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .customer-testimonial blockquote {
+        padding: 0 120px;
+        position: relative;
+        /* This is done when a child element is to be set at a particular position to the parent element. In this case the quotation marks(before and after elements) are the child elements while the parent element is the blockquote.The position of the parent element is "relative", while that of the child element is "absolute" then set the top,bottom,right and left of the child element respectively. */
+    }
+
+    .customer-testimonial blockquote::before {
+        content: '\201C';
+        top: 0;
+        left: 80px;
+    }
+
+    .customer-testimonial blockquote::after {
+        content: '\201D';
+        bottom: 0;
+        right: 80px;
+    }
+
+    /*--FOOTER BOTTOM--*/
+    #footer-copyright p {
+        font-size: 12px;
+    }
+
+    #footer-menu {
+        float: left;
+    }
+
+    #footer-menu a {
+        margin: 0 2px;
+        font-size: 12px;
+        font-weight: 300;
+        padding-right: 1px;
+    }
+
+    .btn-back-to-top {
+        right: 10px;
+        bottom: 15px;
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+
+
+
+@media(min-width:576px) and (max-width:767px) {
+
+    /*----NAVIGATION-------*/
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 5px 0;
+        ;
+    }
+
+    .navbar-nav {
+        float: left;
+    }
+
+    /*---------HOME--------*/
+    #home-heading h3 {
+        font-size: 35px;
+    }
+
+    /*---------SERVICES--------*/
+    .details {
+        margin: 0 0 0 65px;
+    }
+
+    /*---------ABOUT--------*/
+
+    #about-bg-diagonal {
+        height: 350px;
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    #about-content-box {
+        width: 50%;
+        height: 250px;
+
+    }
+
+    #about-desc p {
+        width: 100%;
+    }
+
+    /*---------WORK--------*/
+
+    .img-wrapper img {
+        height: 200px;
+    }
+
+    /*---------TEAM--------*/
+
+    #team .content-box {
+        padding-top: 0;
+    }
+
+
+    .team-member {
+        margin: 0 5px;
+    }
+
+    #team .social-list li {
+        width: 20px;
+        height: 20px;
+        margin: 6px 10px 0 0;
+    }
+
+    /*---------TESTIMONIALS--------*/
+
+    .customer-testimonial img {
+        max-width: 120px;
+        max-height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .customer-testimonial blockquote {
+        padding: 0 50px;
+        position: relative;
+        /* This is done when a child element is to be set at a particular position to the parent element. In this case the quotation marks(before and after elements) are the child elements while the parent element is the blockquote.The position of the parent element is "relative", while that of the child element is "absolute" then set the top,bottom,right and left of the child element respectively. */
+    }
+
+    .customer-testimonial blockquote::before {
+        content: '\201C';
+        top: 0;
+        left: 10px;
+    }
+
+    .customer-testimonial blockquote::after {
+        content: '\201D';
+        bottom: 0;
+        right: 10px;
+    }
+
+    /*---------STATS--------*/
+
+    .stats-box {
+        padding: 30px 0;
+    }
+
+    /*---------FOOTER--------*/
+    #footer-copyright {
+        text-align: center;
+    }
+
+    .btn-back-to-top {
+        right: 10px;
+        bottom: 15px;
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+
+
+@media(max-width:575px) {
+
+    /*----NAVIGATION-------*/
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 5px 0;
+        ;
+    }
+
+    .navbar-nav {
+        float: left;
+    }
+
+    /*---------HOME--------*/
+    #home-heading h3 {
+        font-size: 30px;
+    }
+
+    .btn-general {
+        padding: 8px 20px 8px 20px;
+        font-size: 14px;
+    }
+
+    /*---------ABOUT--------*/
+
+    #about-bg-diagonal {
+        height: 350px;
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    #about-content-box {
+        width: 50%;
+        height: 250px;
+
+    }
+
+    #about-desc p {
+        width: 100%;
+    }
+
+    /*---------WORK--------*/
+
+    .img-wrapper img {
+        height: 200px;
+    }
+
+    /*---------TESTIMONIALS--------*/
+
+    .customer-testimonial img {
+        max-width: 120px;
+        max-height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .customer-testimonial blockquote {
+        padding: 0 40px;
+        position: relative;
+        /* This is done when a child element is to be set at a particular position to the parent element. In this case the quotation marks(before and after elements) are the child elements while the parent element is the blockquote.The position of the parent element is "relative", while that of the child element is "absolute" then set the top,bottom,right and left of the child element respectively. */
+    }
+
+    .customer-testimonial blockquote::before {
+        content: '\201C';
+        top: 0;
+        left: 5px;
+    }
+
+    .customer-testimonial blockquote::after {
+        content: '\201D';
+        bottom: 0;
+        right: 5px;
+    }
+
+    .customer-testimonial blockquote p {
+        font-size: 14px;
+    }
+
+    /*---------PRICING--------*/
+
+    #pricing .content-title-underline {
+        margin-bottom: 0;
+    }
+
+    .pricing-box {
+        margin: 20px 0 40px 0;
+    }
+
+    /*---------STATS--------*/
+
+    .stats-box {
+        padding: 20px 0;
+    }
+
+    .stats-box .fa {
+        font-size: 60px;
+    }
+
+    .stats-box h2,
+    .stats-box p {
+        font-size: 20px;
+    }
+
+    /*---------FOOTER--------*/
+    #footer-copyright {
+        text-align: center;
+    }
+
+    .btn-back-to-top {
+        right: 10px;
+        bottom: 15px;
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+
+@media(max-width:479px) {
+
+    /*---------HOME--------*/
+    #home-heading h3 {
+        font-size: 22px;
+    }
+
+    .btn-general {
+        padding: 5px 18px 5px 18px;
+        font-size: 12px;
+    }
+
+    /*---------ABOUT--------*/
+
+    #about .content-title-underline {
+        margin: 0 0 15px 0;
+    }
+
+    #about p {
+        margin: 15px 0;
+    }
+
+    /*---------WORK--------*/
+    #work .content-box {
+        margin: 15px 0;
+    }
+
+    /*---------TEAM--------*/
+    #team .content-box {
+        padding: 0 0 60px 0;
+    }
+
+    /*---------testimonials--------*/
+    #testimonial h3 {
+        font-size: 22px;
+    }
+
+    /*---------STATS--------*/
+    #stats h3 {
+        font-size: 22px;
+    }
+
+    /*---------FOOTER--------*/
+    #footer-copyright p {
+        font-size: 12px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #contact .contact-right .btn {
+        padding: 4px 10px;
+
+    }
+
+    .btn-back-to-top {
+        right: 2px;
+        bottom: 1px;
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+}
+
+@media(max-width:319px) {
+
+    /*---------HOME--------*/
+    #home-heading h3 {
+        font-size: 16px;
+    }
+
+    .btn-general {
+        padding: 5px 18px 5px 18px;
+        font-size: 10px;
+    }
+
+    /*---------ABOUT--------*/
+
+    #about p {
+        padding: 0;
+        font-size: 14px
+    }
+
+    /*---------WORK--------*/
+    #work .content-box {
+        margin: 30px 0 0 0;
+    }
+
+    /*---------TEAM--------*/
+    #team .content-box {
+        padding: 0 0 60px 0;
+    }
+
+    /*---------TESTIMONIALS--------*/
+    #testimonial h3 {
+        font-size: 18px;
+    }
+
+
+    /*---------STATS--------*/
+    #stats h3 {
+        font-size: 18px;
+    }
+
+    .stats-box {
+        padding: 15px 0;
+    }
+
+    .stats-box .fa {
+        font-size: 50px;
+    }
+
+    .stats-box h2,
+    .stats-box p {
+        font-size: 16px;
+    }
+
+    /*---------FOOTER--------*/
+
+    .btn-back-to-top {
+        right: 10px;
+        bottom: 8px;
+        font-size: 10px;
+    }
+}
